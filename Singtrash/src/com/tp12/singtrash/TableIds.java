@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class TableIds
 {
+	/**
+	 * Gets all of the ids of the cards images for the table.
+	 * @return
+	 */
 	public static ArrayList<Integer> getIds()
 	{
 		ArrayList<Integer> list = new ArrayList<Integer>();

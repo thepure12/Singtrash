@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.opengl.Visibility;
+import android.view.View;
 import android.widget.ImageView;
 
 public class Display
@@ -115,6 +117,10 @@ public class Display
 			else
 				cardImgs.get(i).setImageResource(R.drawable.b1fv);
 			i++;
+		}
+		for (i = i; i < 10; i++)
+		{
+			cardImgs.get(i).setVisibility(View.GONE);
 		}
 	}
 }

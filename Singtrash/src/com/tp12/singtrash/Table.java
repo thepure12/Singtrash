@@ -10,6 +10,10 @@ public class Table extends ArrayList<Card>
 		size = 10;
 	}
 	
+	/**
+	 * Only add a card if the current size is
+	 * smaller than the allowed size.
+	 */
 	@Override
 	public boolean add(Card object)
 	{
@@ -18,11 +22,21 @@ public class Table extends ArrayList<Card>
 		return false;
 	}
 	
-	public void reduceSize()
+	/**
+	 * Reduce the allowed size buy one less
+	 * than the level
+	 * @param level the player is currently on
+	 */
+	public void reduceSize(int level)
 	{
-		size--;
+		level--;
+		size -= level;
 	}
 	
+	/**
+	 * 
+	 * @return the allowed size of the table.
+	 */
 	public int getSize()
 	{
 		return size;

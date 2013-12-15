@@ -10,6 +10,9 @@ public class ClickListener implements OnClickListener
 		this.game = game;
 	}
 
+	/**
+	 * Handle clicks
+	 */
 	@Override
 	public void onClick(View v)
 	{
