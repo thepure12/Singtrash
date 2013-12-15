@@ -1,4 +1,7 @@
 package com.tp12.singtrash;
+
+import android.graphics.Color;
+
 public class Card
 {
 	private char suit;
@@ -52,6 +55,14 @@ public class Card
 	public boolean isFaceUp()
 	{
 		return faceup;
+	}
+	
+	public int getColor()
+	{
+		if (suit == 'd' || suit == 'h')
+			return Color.RED;
+		else
+			return Color.BLACK;
 	}
 	
 	/**

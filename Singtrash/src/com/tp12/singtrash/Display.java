@@ -88,7 +88,9 @@ public class Display
 		pileImg = (ImageView) activity.findViewById(R.id.pile);
 		for (int i : TableIds.getIds())
 		{
-			cardImgs.add((ImageView) activity.findViewById(i));
+			ImageView iv = (ImageView) activity.findViewById(i);
+			iv.setVisibility(View.VISIBLE);
+			cardImgs.add(iv);
 		}
 	}
 	

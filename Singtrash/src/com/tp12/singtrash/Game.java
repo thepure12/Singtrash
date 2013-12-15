@@ -116,7 +116,10 @@ public class Game
 			}
 		}
 		if (win)
+		{
 			nextLevel();
+			Achievements.instance().checkAnyAchieved(table);
+		}
 	}
 	
 	/**
